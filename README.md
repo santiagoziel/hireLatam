@@ -5,13 +5,15 @@ This Express TypeScript API provides a system for managing insurance policies, i
 ## Prerequisites
 Before you start, ensure you have the following installed:
 
-Node.js
-npm
-Docker (for running a PostgreSQL database container)
+- Node.js
+- npm
+- Docker (for running a PostgreSQL database container)
 
 ## Setup
 ### Step 1: Clone the Repository
-Clone this repository to your local machine using git clone followed by the repository URL.
+Clone this repository to your local machine using git clone followed by:
+
+*https://github.com/santiagoziel/hireLatam.git*
 
 ### Step 2: Install Dependencies
 Navigate to the project directory and run:
