@@ -1,0 +1,31 @@
+{
+  "name": "hirelatam",
+  "version": "1.0.0",
+  "description": "Insurance policy management RESTful API service",
+  "main": "server.ts",
+  "scripts": {
+    "dev": "nodemon src/server.ts",
+    "db:start": "docker run -d --name hireLATAMMock -e POSTGRES_DB=service_db -e POSTGRES_USER=postgres -e POSTGRES_PASSWORD=admin -p 5432:5432 --health-cmd pg_isready --health-interval 1s --health-timeout 5s --health-retries 30 postgres:14.5"
+  },
+  "author": "Santiago Torres",
+  "license": "ISC",
+  "dependencies": {
+    "cookie-parser": "^1.4.6",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.1",
+    "express-jwt": "^8.2.1",
+    "jsonwebtoken": "^9.0.0",
+    "pg": "^8.8.0",
+    "sequelize": "^6.21.6",
+    "umzug": "^3.2.1"
+  },
+  "devDependencies": {
+    "@types/cookie-parser": "^1.4.3",
+    "@types/express": "^4.17.13",
+    "@types/node": "^18.15.11",
+    "nodemon": "^3.0.3",
+    "sequelize-cli": "^6.4.1",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.3.3"
+  }
+}
