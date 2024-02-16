@@ -44,7 +44,7 @@ SECRET_KEY=insecure
 ```
 These variables are necessary for the application to connect to the database and for other configurations.
 
-### Running the Server
+### Step 5: Running the Server
 To start the server, run:
 ```
 npm run dev
@@ -57,7 +57,7 @@ The server will start on port 5000.
 The API provides the following endpoints:
 
 1. Register User
-- Endpoint: POST /register
+- Endpoint: POST /api/register
 - Description: Registers a new user and returns a set-cookie header with a valid access token.
 - Sample Body:
 ```json
@@ -67,7 +67,7 @@ The API provides the following endpoints:
 ```
 
 2. Create Policy
-- Endpoint: POST /createPolicy
+- Endpoint: POST /api/createPolicy
 - Middleware: jwtMiddleware
 - Description: Allows registered users to create a new policy.
 - Sample Body:
@@ -85,7 +85,7 @@ The API provides the following endpoints:
 ```
 
 3. Read Policy
-- Endpoint: GET /readPolicy
+- Endpoint: GET /api/readPolicy
 - Middleware: jwtMiddleware
 - Description: Retrieves policy information for policies created by the logged-in user.
 - Sample Body:
@@ -96,7 +96,7 @@ The API provides the following endpoints:
 ```
 
 4. Update Policy
-- Endpoint: POST /updatePolicy
+- Endpoint: POST /api/updatePolicy
 - Middleware: jwtMiddleware
 - Description: Allows users to update information for a policy they registered.
 - Sample Body:
@@ -110,7 +110,7 @@ The API provides the following endpoints:
 ```
 
 5. Delete Policy
-- Endpoint: POST /deletePolicy
+- Endpoint: POST /api/deletePolicy
 - Middleware: jwtMiddleware
 - Description: Allows users to delete a policy they have registered.
 - Sample Body:
