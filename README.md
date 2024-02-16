@@ -44,7 +44,7 @@ SECRET_KEY=insecure
 ```
 These variables are necessary for the application to connect to the database and for other configurations.
 
-Running the Server
+### Running the Server
 To start the server, run:
 ```
 npm run dev
